@@ -2,20 +2,26 @@
 <div class="img ">
     <div class="welcome-flex section-height">
     <button class="button1">Your Daily Dose Of Positivity✨</button>
-    <h1>Small Thoughts,<br/><strong>Big Changes</strong></h1>
-    <p>Discover daily motivation, practical tips, and real stories to lift your heart and brighten your mindset.</p>
-    <button>Get Inspired</button><button>Today's Quote</button>
-    <h3>Daily Quotes<br/><span>to lift your heart</span></h3>
-    <h3>Helpful Tips<br/><span>Simple tips for a better you</span></h3>
-    <h3>Real Stories<br/><span>Inspiring journeys</span></h3>
+    <h1 class="h1">Small Thoughts,<br/><strong class="strong">Big Changes</strong></h1>
+    <p class="para-2">Discover daily motivation, practical tips, and<br/>real stories to lift your heart and brighten<br/> your mindset.</p>
+    <div class="button-flex">
+    <button class="button-2">Get Inspired</button>
+    <button class="button-3">Today's Quote</button>
+    </div>
+    <div class="h3 h3-flex">
+    <p class="heading">Daily Quotes<br/><span class="span">to lift your heart</span></p>
+    <p class="heading">Helpful Tips<br/><span class="span">Simple tips for a better you</span></p>
+    <p class="heading">Real Stories<br/><span class="span">Inspiring journeys</span></p>
+    </div>
+    
     </div>
 </div>
 </template>
 
 <style scoped>
 .img{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://i.pinimg.com/736x/a4/54/91/a45491d0a0c9596ca1289c5619b83fdc.jpg');
-    height: 90vh;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../assets/welcome.png');
+    height: 80vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,21 +33,83 @@
     color:rgba(74, 50, 107, 1);
     padding: 6px ;
     width: 210px;
-    height: 50px;
+    height: 40px;
     font-size: 13px;
     font-weight: 700;
     border-radius: 20px;
     border: none;
     transition: 0.9s;
 }
+.button-2{
+    color: white;
+    background-color: rgba(74, 50, 107, 1);
+    padding: 10px 0px;
+    border: none;
+    width: 130px;
+     margin-left: 20px; 
+     margin-top: 20px;
+}
+.button-3{
+    color:black ;
+    background-color: white;
+    padding: 10px 0px;
+    border: none;
+    width: 130px;
+    margin-left: 20px; 
+    margin-top: 20px;
+    font-weight: 400;
+}
+.button-flex{
+    display: flex;
+    flex-direction: row;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .welcome-flex{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: flex-end;
     flex-direction: column;
-}
-.section-height{
     height: 100vh;
+    padding-right: 90px;
+}
+.h1{
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.strong{
+    color: rgb(205, 171, 248);
+    font-size: 40px;
+}
+.para-2{
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.h3{
+    color: white;
+    margin-top: 20px;
+    
+}
+.h3-flex{
+    display: flex;
+    flex-direction: row;
+}
+.span{
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+.heading{
+    font-size: 18px;
+    color:rgb(244, 217, 247);
 }
 
 </style>
