@@ -1,0 +1,3 @@
+<template>
+    <h2>Stories</h2>
+</template>
