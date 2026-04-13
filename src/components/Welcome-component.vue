@@ -20,7 +20,7 @@
 
 <style scoped>
 .img{
-    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../assets/welcome.png');
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../assets/welome.png');
     height: 80vh;
     width: 100%;
     background-position: center;
@@ -31,9 +31,9 @@
     background-color :rgba(179, 155, 181, 1);
     backdrop-filter: blur(18px);
     color:rgba(74, 50, 107, 1);
-    padding: 6px ;
-    width: 210px;
-    height: 40px;
+    padding:10px 10px;
+    width: 220px;
+    height: 50px;
     font-size: 13px;
     font-weight: 700;
     border-radius: 20px;
@@ -42,6 +42,7 @@
 }
 .button-2{
     color: white;
+    border-radius: 7px;
     background-color: rgba(74, 50, 107, 1);
     padding: 10px 0px;
     border: none;
@@ -53,6 +54,7 @@
     color:black ;
     background-color: white;
     padding: 10px 0px;
+    border-radius: 7px;
     border: none;
     width: 130px;
     margin-left: 20px; 
@@ -71,10 +73,10 @@ html, body {
 .welcome-flex{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
-    height: 100vh;
-    padding-right: 90px;
+    height: 80vh;
+    padding-left: 90px;
 }
 .h1{
     color: white;
@@ -91,7 +93,7 @@ html, body {
   margin-top: 20px;
   font-size: 20px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .h3{
     color: white;
