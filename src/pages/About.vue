@@ -8,7 +8,7 @@
     <h3 class="about-card h3 ">A place for inspiration and growth</h3>
 
 
-  <p class="about-card p">Welcome to my corner of the internet! I’m <br/> happy you’re here  <br/>I created this space to share uplifting stories,<br/>motivational quotes, and tips for growing<br/> stronger every day.<br/>Join me on this journey of self-love,<br/> positivity, and personal growth</p>
+ <i> <p class="about-card p">Welcome to my corner of the internet! I’m <br/> happy you’re here  <br/>I created this space to share uplifting stories,<br/>motivational quotes, and tips for growing<br/> stronger every day.<br/>Join me on this journey of self-love,<br/> positivity, and personal growth</p></i>
   <!-- <p class="about-card p"></p> -->
   <!-- <p class="about-card p"></p> -->
      <button class="about-btn">Let’s Connect ✨</button>
