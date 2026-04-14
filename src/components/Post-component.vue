@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
+
+</script>
+
 <template>
        <div class="div-1 ">
       <div class="div-2">
@@ -10,7 +15,9 @@
    <img class="post-img" src="https://i.pinimg.com/1200x/77/bb/17/77bb17ca4ecd7b44822e32447a5dc8bc.jpg"></img>
     <img class="post-img" src="https://i.pinimg.com/736x/a1/82/e0/a182e052bb32ef1712d8ab1d95ca859e.jpg"></img>
      <img class="post-img"src="https://i.pinimg.com/736x/13/33/b1/1333b1964181b5a6fd90ca2ac700850a.jpg"></img>
-     <button class="button-2">View All Postes ⇒</button>
+     <routerLink to="./quotes">
+     <button class="button-2" >View All Postes ⇒</button>
+     </routerLink>
    </div>
 
    <div class="button-2-flex">

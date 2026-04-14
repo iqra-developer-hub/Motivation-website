@@ -4,20 +4,20 @@
     <p class="p">Story:
     She worked quietly every day while others were busy showing off. No one noticed her hard work — until one day, her success spoke louder than words.</p>
     <h3 class="h3">Lesson: Consistency matters more than attention</h3>
-    <hr/>
+    <!-- <hr/> -->
 
     <h2 class="h2">2. She Chose Herself</h2>
     <p class="p">Story:
      She felt overwhelmed by her big goals. Instead of quitting, she took one small step daily — and slowly, she reached where she once dreamed.</p>
      <h3 class="h3">Lesson:  Small steps lead to big success</h3>
-      <hr/>
+      <!-- <hr/> -->
 
      <h2 class="h2">3. One Step at a Time</h2>
     <p class="p">Story:
       She felt overwhelmed by her big goals. Instead of quitting, she took one small step daily — and slowly, she reached where she once dreamed.
      </p>
      <h3 class="h3">Lesson: Small steps lead to big success</h3>
-      <hr/>
+      <!-- <hr/> -->
 
        <h2 class="h2">4. The Power of “No”</h2>
     <p class="p">Story:
@@ -25,16 +25,28 @@
      
      </p>
      <h3 class="h3">Lesson: Don’t compare — everyone has their own timing</h3>
-     <hr/>
+     <!-- <hr/> -->
     </div>
 
     
 </template>
 
 <style scoped>
+
 .div{
     margin-top: 30px;
     margin-left: 20px;
+      width: 90%;
+     /* max-width: 900px; */
+
+  background: rgb(223, 218, 235);
+  border-radius: 25px;
+  padding: 40px;
+
+  box-shadow: 0 10px 25px rgba(106, 77, 147, 0.15);
+  text-align: center;
+
+  backdrop-filter: blur(10px);
 }
 .h2{
     margin-top: 40px;
