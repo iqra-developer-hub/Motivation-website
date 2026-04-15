@@ -1,39 +1,39 @@
 <template>
     <div class="div">
 
-     <i><div class="divide-line">    
+     <i>      
    <h2 class="h2">1.  The Silent Effort</h2>
     <p class="p">Story:
     She worked quietly every day while others were busy showing off. No one noticed her hard work<br/> — until one day, her success spoke louder than words.</p>
     <h3 class="h3">Lesson: Consistency matters more than attention</h3>
-    </div>
+    
     <!-- <hr/> -->
 
-    <div class="divide-line">
+    <div class="divide-line"> </div>
     <h2 class="h2">2. She Chose Herself</h2>
     <p class="p">Story:
      She felt overwhelmed by her big goals. Instead of quitting, she took one small step daily<br/> — and slowly, she reached where she once dreamed.</p>
      <h3 class="h3">Lesson:  Small steps lead to big success</h3>
-     </div>
+    
       <!-- <hr/> -->
 
-      <div class="divide-line">
+      <div class="divide-line"></div>
      <h2 class="h2">3. One Step at a Time</h2>
     <p class="p">Story:
       She felt overwhelmed by her big goals. Instead of quitting, she took one small step daily<br/> — and slowly, she reached where she once dreamed.
      </p>
      <h3 class="h3">Lesson: Small steps lead to big success</h3>
-     </div>
+     
       <!-- <hr/> -->
 
-      <div class="divide-line">
+      <div class="divide-line"> </div>
        <h2 class="h2">4. The Power of “No”</h2>
     <p class="p">Story:
       She compared herself with others and felt behind. But when she focused on her own journey,<br/> she realized she was growing beautifully in her own time
      
      </p>
      <h3 class="h3">Lesson: Don’t compare — everyone has their own timing</h3>
-     </div></i>
+    </i>
      <!-- <hr/> -->
     </div>
 
@@ -54,7 +54,7 @@
   /* text-align: center; */
 
   backdrop-filter: blur(10px);
-  height: 90vh;
+  /* height: 100vh; */
   line-height: 33px;
   letter-spacing: 1px;
 }
@@ -72,7 +72,16 @@
 }
 .divide-line{
     height: 1px;
-    background: rgba(180, 160, 210, 0.3);
-    margin:60px 0px ;
+    background: rgba(114, 106, 128, 0.3);
+    margin:20px 0px ;
+}
+@media(max-width: 768px){
+  .div{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  width: auto;
+  }
 }
 </style>

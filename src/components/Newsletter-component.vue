@@ -13,9 +13,9 @@
 <style scoped>
 .div-1{
   background-color: rgb(224, 220, 220);
-    height: 30vh;
+    /* height: 30vh; */
     margin: 70px 50px  0px 50px;
-    width: 90%;
+    /* width: 90%; */
     border-radius: 10px;
     padding: 20px 20px;
     text-align: center;
@@ -34,7 +34,7 @@
 }
 .input{
    height: 20px;
-   width: 500px;
+   width: 50vh;
    padding:15px 15px ;
    margin-top: 20px;
    border-radius: 6px;
@@ -53,6 +53,11 @@
     border: none;
     transition: 0.9s;
     margin-top: 15px;    
+}
+@media(max-width: 768px){
+.input{
+   width: auto;
+}
 }
 
 </style>

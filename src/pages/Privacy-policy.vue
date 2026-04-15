@@ -8,7 +8,7 @@
       Your privacy is important to us. This website is created to share motivation, tips, and stories while respecting your personal information.
     </p>
 
-    <div class="divider">
+    <div class="divider"> </div>
 
     <h3>Information We Collect</h3>
     <p>
@@ -17,9 +17,9 @@
     <p>
       We do not collect sensitive personal information.
     </p>
-    </div>
+   
 
-    <div class="divider">
+    <div class="divider"></div>
 
     <h3>User Content</h3>
     <p>
@@ -28,9 +28,9 @@
     <p>
       Please avoid sharing personal or private details.
     </p>
-    </div>
+    
 
-    <div class="divider">
+    <div class="divider"></div>
 
     <h3>Cookies</h3>
     <p>
@@ -39,9 +39,9 @@
     <p>
       You can disable cookies in your browser settings if you prefer.
     </p>
-   </div>
+   
 
-    <div class="divider">
+    <div class="divider"> </div>
 
     <h3>Third-Party Services</h3>
     <p>
@@ -50,37 +50,38 @@
     <p>
       These services have their own privacy policies.
     </p>
-   </div>
+  
 
-    <div class="divider">
+    <div class="divider"></div>
 
     <h3>Data Protection</h3>
     <p>
       We take reasonable steps to keep your information safe. However, no method of online data transmission is 100% secure.
     </p>
-    </div>
+    
 
-    <div class="divider">
+    <div class="divider"></div>
     <h3>Changes to This Policy</h3>
     <p>
       We may update this Privacy Policy from time to time. Any changes will be posted on this page.
     </p>
-    </div>
+    
 
-    <div class="divider">
+    <div class="divider"></div>
 
     <h3>Contact Us</h3>
     <p>
       If you have any questions about this Privacy Policy, feel free to contact us.
     </p>
-  </div>
+  
 </div>
+ </div>
 </template>
 
 <style scoped>
 .privacy-container {
-  max-width: 900px;
-  width: 100%;
+  /* max-width: 900px; */
+  width: 70%;
 
   background: rgba(255, 255, 255, 0.7);
   padding: 40px;

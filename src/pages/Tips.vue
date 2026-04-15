@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: column;
     margin: 30px;
-    color: rgb(56, 35, 38);
+    color: rgb(66, 64, 64);
     
 }
 .h2{
@@ -97,7 +97,7 @@
     line-height: 28px;
     font-size: 20px;
     font-weight:400;
-    color: rgb(27, 20, 21);
+    color: rgb(37, 37, 37);
 
 }
 .h1{

@@ -1,5 +1,6 @@
 <template>
-    <div class="div background" >
+
+    <div class="div background " >
     <i><h2 class="h2">Daily Quotes</h2></i>
     <p class="p">“Words to lift your heart”</p>
     </div>
@@ -20,6 +21,7 @@
   </div>
       </div>
     </div>
+    
     
 </template>
 
@@ -65,6 +67,7 @@ background: linear-gradient(
   .div{
     text-align: center;
     margin-top: 50px;
+     
   }
   .h2{
     color:  rgb(71, 53, 95);
@@ -96,14 +99,12 @@ background: linear-gradient(
   border-radius: 20px;
   padding: 25px;
   min-height: 160px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   box-shadow: 0 8px 20px rgba(106, 77, 147, 0.15);
   transition: all 0.3s ease;
   position: relative;
+   display: flex;
+     flex-direction: column;
+   justify-content: space-between;
 }
 
 /*  Hover effect */
@@ -163,5 +164,12 @@ background: linear-gradient(
 .actions button:hover {
   background: rgba(140, 110, 180, 0.4);
   color: white;
+}
+
+@media(max-width: 768px){
+    .quotes-container{
+      display: grid;
+     grid-template-columns:1fr;
+    } 
 }
 </style>

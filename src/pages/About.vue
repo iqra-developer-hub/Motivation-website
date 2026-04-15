@@ -24,9 +24,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
   background: rgb(163, 157, 179);
-  padding: 40px;
+ 
+  gap: 40px;
 }
 .about-card {
   width: 70%;
@@ -40,6 +41,7 @@
   text-align: center;
 
   backdrop-filter: blur(10px);
+   margin-top: 20px;
 }
 
 .about-card h1 {
@@ -95,5 +97,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media(max-width: 768px){
+   .about-page {
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .about-card {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .about-card h1,
+  .about-card h3,
+  .about-card p {
+    margin-left: 0;  
+    text-align: center;
+  }
+
+  .about-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-girl {
+    width: 150px;
+    height: 150px;
+  }
 }
 </style>

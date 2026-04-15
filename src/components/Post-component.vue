@@ -33,8 +33,9 @@ import { RouterLink } from 'vue-router';
 <style scoped>
  .div-1{
     background-color:rgb(224, 220, 220);
-    height: 60vh;
-    margin: 40px 40px ;
+    /* height: 60vh; */
+    margin: 40px ;
+    padding: 20px;
 
  }
  .h1{
@@ -62,7 +63,7 @@ import { RouterLink } from 'vue-router';
     transition: 0.9s;
      margin-right: 30px;
     margin-top: 30px;
-    margin-left: 700px;
+    margin-left: 0;
    
     
 }
@@ -75,9 +76,9 @@ import { RouterLink } from 'vue-router';
 .post-img{
   height: 250px;
   width: 210px;
-  padding-bottom: 90px;
+  /* padding-bottom: 90px; */
   border-radius: 7px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .img-flex{
    display: flex;
@@ -108,5 +109,22 @@ import { RouterLink } from 'vue-router';
 .button-2-flex{
     display: flex;
     justify-content: center;
+}
+
+@media(max-width: 768px){
+   .div-1{
+    margin: 20px;
+    padding: 15px;
+   }
+
+   .div-2{
+    flex-direction: column;
+    align-items: center;  /* center content */
+    gap: 20px;            /* spacing control */
+  }
+   .button{
+      margin:20px auto ;
+      display: block;
+   }
 }
 </style>

@@ -63,7 +63,7 @@
 <style scoped>
    .div-1{
     background-color:rgba(74, 50, 107, 1);
-    height: 30vh;
+    /* height: 30vh; */
     margin-top: 40px ;
     text-align: center;
   }
@@ -105,6 +105,7 @@
     padding-top: 50px;
     color: white;
     line-height: 26px;
+    gap: 40px;
     
   }
   .Footer{
@@ -113,5 +114,14 @@
     padding: 35px 10px;
     color:white;
     border-top:1px solid rgb(114, 109, 109);
-  }   
+  }  
+  
+@media(max-width: 768px){
+  .flex-parent{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  }
+} 
 </style>

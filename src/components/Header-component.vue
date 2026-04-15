@@ -41,7 +41,12 @@
   color: white;
   margin-left: 5px;
  }
- /* .logo:hover{
-  
- } */
+@media(max-width: 768px){
+   .Header-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+}
   </style>

@@ -114,4 +114,13 @@ html, body {
     color:rgb(244, 217, 247);
 }
 
+@media(max-width: 768px){
+   .welcome-flex{
+    padding: 20px;
+    gap: 7px;
+  
+
+  }
+}
+
 </style>
