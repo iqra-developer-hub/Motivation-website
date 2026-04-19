@@ -5,8 +5,12 @@
     <h1 class="h1">Small Thoughts,<br/><strong class="strong">Big Changes</strong></h1>
     <p class="para-2">Discover daily motivation, practical tips, and<br/>real stories to lift your heart and brighten<br/> your mindset.</p>
     <div class="button-flex">
+        <RouterLink to="/stories">
     <button class="button-2">Get Inspired</button>
+    </RouterLink>
+    <RouterLink to="/todayQuotes">
     <button class="button-3">Today's Quote</button>
+    </RouterLink>
     </div>
     <div class="h3 h3-flex">
     <p class="heading">Daily Quotes<br/><span class="span">to lift your heart</span></p>

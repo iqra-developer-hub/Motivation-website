@@ -1,21 +1,45 @@
 <template>
-    
+    <form  >
   <div class="contact-page">
     <div class="contact-card">
 
       <h1>Contact Us 💜</h1>
       <p>We would love to hear from you ✨</p>
 
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
+      <input v-model="name" type="text" placeholder="Your Name">
+      <input v-model="email" type="email" placeholder="Your Email">
 
-      <textarea placeholder="Your Message..."></textarea>
+      <textarea v-model="message" placeholder="Your Message..."></textarea>
 
-      <button>Send Message ✨</button>
+      <button type="submit" @click="handleSubmit" >Send Message ✨</button>
 
     </div>
   </div>
+  </form>
 </template>
+
+<script setup>
+ import { ref } from "vue";
+
+ const name = ref("");
+ const email = ref("");
+ const message = ref("");
+
+const handleSubmit = () => {
+  console.log("form submitted");
+
+  if (!name.value && !email.value && !message.value) {
+    window.alert("please fill all fields!");
+    return;
+  }
+
+  window.alert("data successfully sent!");
+
+  name.value = "";
+  email.value = "";
+  message.value = "";
+};
+</script>
 
 <style scoped>
 

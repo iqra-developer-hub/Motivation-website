@@ -1,31 +1,98 @@
 <template>
   <div class="suggest-page">
+
+    <!-- 🧩 FORM (ALWAYS SHOW) -->
     <div class="suggest-card">
 
       <h1>Suggest a Topic 💜</h1>
       <p>Have an idea? Share it with us ✨</p>
 
-      <input type="text" placeholder="Your Name (optional)">
-      <input type="text" placeholder="Topic Title">
+      <input v-model="name" type="text" placeholder="Your Name (optional)">
+      <input v-model="title" type="text" placeholder="Topic Title">
 
-      <textarea placeholder="Describe your idea..."></textarea>
+      <textarea v-model="description" placeholder="Describe your idea..."></textarea>
 
-      <select>
-        <option>Select Category</option>
+      <select v-model="category">
+        <option disabled value="">Select Category</option>
         <option>Quotes</option>
         <option>Tips</option>
         <option>Stories</option>
         <option>Other</option>
       </select>
 
-      <textarea placeholder="Any additional details..."></textarea>
+      <textarea v-model="extra" placeholder="Any additional details..."></textarea>
 
-      <button>Submit Idea ✨</button>
+      <button @click="submitIdea">Submit Idea ✨</button>
 
     </div>
-  </div>
 
+    <!-- 📜 IDEAS LIST (OUTSIDE CARD) -->
+    <div class="ideas-container">
+
+      <div v-if="ideas.length === 0">
+        <p>No ideas yet 💜</p>
+      </div>
+
+      <div v-else>
+        <div v-for="idea in ideas" :key="idea.id" class="idea-card">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </template>
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const name = ref("")
+const title = ref("")
+const description = ref("")
+const category = ref("")
+const extra = ref("")
+
+const ideas = ref([])
+
+//  LOAD DATA
+onMounted(() => {
+  ideas.value = JSON.parse(localStorage.getItem("ideas")) || []
+})
+
+//  SUBMIT FUNCTION
+const submitIdea = () => {
+    if (!title.value || !description.value || !name.value || !category.value || !extra.value) {
+    alert("Please fill required fields 💜")
+    return
+  }
+  const newIdea = {
+    id: Date.now(),
+    name: name.value,
+    title: title.value,
+    description: description.value,
+    category: category.value,
+    extra: extra.value
+  }
+
+  //  OLD + NEW merge
+  const oldIdeas = JSON.parse(localStorage.getItem("ideas")) || []
+
+  const updatedIdeas = [newIdea, ...oldIdeas]
+
+  ideas.value = updatedIdeas
+
+  localStorage.setItem("ideas", JSON.stringify(updatedIdeas))
+
+  alert("Idea submitted 💜")
+
+  // reset
+  name.value = ""
+  title.value = ""
+  description.value = ""
+  category.value = ""
+  extra.value = ""
+
+}
+</script>
 
 <style scoped>
 /*  Main Page */
